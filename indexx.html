@@ -14,7 +14,7 @@
 
     <link href="s.css" rel="stylesheet" />
 
-    <title>Today I Learned!</title>
+    <title></title>
   </head>
   <body>
 
@@ -22,41 +22,41 @@
     <header class="header">
        
       <div div class="logo">
-        <img src="logo.png" height="68" width="68" alt="Today I Learned Logo" />
+        <img src="bg.png" height="68" width="68" alt="Today I Learned Logo" />
 
       
 
 
       
 
-      <h1>Today I Learned</h1>
+      <h1> STINGER</h1>
 
       </div>
-      <button>Share a fact</button>
+      <button class="btn btn-large btn-open">Share a fact</button>
     </header>
 
-    <form class="fact-form">
+    <form class="fact-form hidden">
       <input type="text" placeholder="Share a fact with the world..." />
       <span>200</span>
       <input type="text" placeholder="Trustworthy source...." />
       <select>
         <option value="">Choose category:</option>
-        <option value="technology">Technology</option>
-        <option value="science">Science</option>
-        <option value="finance">Finanace</option>
+        <option value="technology">CYBERSECURITY</option>
+        <option value="science">AI-ML</option>
+        <option value="finance">WEB DEVELOPMENT</option>
       </select>
-      <button>Post</button>
+      <button class="btn btn-large">Post</button>
     </form>
 
     <main class="main">
       <aside>
         <ul >
-          <li><button>All</button></li>
-          <li>
-            <button>Technology</button>
+          <li class="category"><button class="btn btn-all-categories">All</button></li>
+          <li class="category">
+            <button class="btn btn-category" style="background-color: #3b82f6;">CYBERSECURITY</button>
           </li>
-          <li>
-            <button>Science</button>
+          <li class="category">
+            <button class="btn btn-category " style="background-color: green;">AI-ML</button>
           </li>
         </ul>
       </aside>
@@ -65,22 +65,22 @@
         <li class="fact">
           <p>
             React is being developed by Meta (formerly facebook)
-            <a href="https://opensource.fb.com/" target="_blank">(Source)</a>
+            <a class= "source"  href="https://opensource.fb.com/" target="_blank">(Source)</a>
           
           </p>
 
-          <span class="tag" style="background-color:#3b82f6;">#technology#</span>
+          <span class="tag" style="background-color:#3b82f6;">technology</span>
 
-          <div>
-            <button>👍<strong>24</strong></button>
-            <button>🤯<strong>9</strong></button>
-            <button>⛔️<strong>4</strong></button>
+          <div class="vote-buttons">
+            <button>👍24</button>
+            <button>🤯9</button>
+            <button>⛔️4</button>
           </div>
           <p class="fact">
           Millennial dads spend 3 times as much time with their kids than
             their fathers spent with them. In 1982, 43% of fathers had never
             changed a diaper. Today, that number is down to 3%
-            <a
+            <a class="source"
               href="https://www.mother.ly/parenting/millennial-dads-spend-more-time-with-their-kids"
               target="_blank"
               >(Source)</a
@@ -88,15 +88,19 @@
             
           </p>
 
-          <span class="tag" style="background-color: #eab308;">#society#</span>
-          <div>
-            <button>👍<strong>11</strong></button>
-            <button>🤯<strong>2</strong></button>
-            <button>⛔️<strong>0</strong></button>
+          <span class="tag" style="background-color: #eab308;">society</span>
+          <div class="vote-buttons">
+            <button>👍11</button>
+            <button>🤯2</button>
+            <button>⛔️0</button>
           </div>
         </li>
       </ul>
     </main>
     </div>
+
+    <script src="script.js">
+
+    </script>
   </body>
 </html>
